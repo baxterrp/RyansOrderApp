@@ -1,0 +1,15 @@
+﻿@model Order
+
+<p>Submit your order</p>
+
+<form asp-controller="Home" asp-action="SubmitOrder">
+    <label asp-for="Name">Name</label>
+    <input asp-for="Name" />
+
+    <label asp-for="Item">Item</label>
+    <input asp-for="Item" />
+
+    <button>Submit</button>
+</form>
+
+<a asp-controller="Home" asp-action="Orders">View All Orders</a>

@@ -1,0 +1,12 @@
+﻿@model List<Order>
+
+<h2>Orders</h2>
+
+@foreach(var order in Model)
+{
+    <br />
+    <ul>
+        <li>Name: @order.Name</li>
+        <li>Item: @order.Item</li>
+    </ul>
+}
